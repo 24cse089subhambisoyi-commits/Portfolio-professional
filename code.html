@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#101418","on-error-container":"#ffdad6","surface":"#101418","surface-bright":"#36393f","secondary":"#ffc55d","on-error":"#690005","surface-container-high":"#272a2f","on-primary-fixed":"#281900","on-primary":"#432c00","surface-container-lowest":"#0b0e13","on-surface":"#e1e2e9","on-surface-variant":"#d5c4ad","surface-container":"#1d2025","on-tertiary":"#28313c","tertiary":"#bec8d7","background":"#101418","surface-container-highest":"#32353a","primary-container":"#e3a008","tertiary-fixed":"#d9e3f2","on-tertiary-fixed-variant":"#3e4853","primary-fixed":"#ffdeac","secondary-fixed":"#ffdeaa","primary":"#ffbc3f","tertiary-container":"#a3adbb","on-primary-fixed-variant":"#604100","on-background":"#e1e2e9","error-container":"#93000a","on-secondary-container":"#5d4000","inverse-primary":"#7e5700","inverse-surface":"#e1e2e9","surface-variant":"#32353a","error":"#ffb4ab","outline-variant":"#514534","on-tertiary-container":"#37414d","on-secondary-fixed-variant":"#5f4100","surface-tint":"#ffba36","outline":"#9e8f7a","inverse-on-surface":"#2e3036","secondary-fixed-dim":"#ffba2c","on-primary-container":"#573b00","surface-container-low":"#191c21","on-secondary-fixed":"#271900","on-tertiary-fixed":"#131c27","secondary-container":"#eaa700","primary-fixed-dim":"#ffba36","tertiary-fixed-dim":"#bdc7d6","on-secondary":"#422c00"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-2xl":"3rem","container-reading":"42rem","space-xs":"0.5rem","gutter-mobile":"1.25rem","container-max":"68rem","space-3xl":"4.5rem","space-2xs":"0.25rem","space-sm":"0.75rem","gutter-desktop":"2rem","space-xl":"2rem","space-4xl":"6rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-md":["Inter"],"body-sm":["Inter"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Newsreader"],"code-inline":["JetBrains Mono"],"body-lg":["Inter"],"headline-lg":["Newsreader"],"headline-md":["Newsreader"],"headline-lg-mobile":["Newsreader"],"label-sm":["JetBrains Mono"]},fontSize:{"headline-xl":["3.5rem",{lineHeight:"1.15",letterSpacing:"-0.02em",fontWeight:"400"}],"headline-sm":["1.25rem",{lineHeight:"1.4",letterSpacing:"0",fontWeight:"500"}],"body-md":["1rem",{lineHeight:"1.65",letterSpacing:"-0.005em",fontWeight:"400"}],"body-sm":["0.875rem",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],"label-md":["0.875rem",{lineHeight:"1.4",letterSpacing:"-0.01em",fontWeight:"500"}],"headline-xl-mobile":["2.25rem",{lineHeight:"1.2",letterSpacing:"-0.015em",fontWeight:"400"}],"code-inline":["0.875rem",{lineHeight:"1.4",letterSpacing:"0",fontWeight:"400"}],"body-lg":["1.125rem",{lineHeight:"1.7",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["2.25rem",{lineHeight:"1.25",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-md":["1.5rem",{lineHeight:"1.35",letterSpacing:"-0.005em",fontWeight:"500"}],"headline-lg-mobile":["1.75rem",{lineHeight:"1.3",letterSpacing:"-0.01em",fontWeight:"400"}],"label-sm":["0.75rem",{lineHeight:"1.35",letterSpacing:"0.02em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant"><div class="h-16 max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><a class="flex items-center gap-space-xs group" data-path="home" href="#"><span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors tracking-tight">AL // Alex Lin</span></a><span class="hidden sm:inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container border border-outline-variant text-label-sm font-label-sm text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>open to internships</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-medium"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="education" href="#">Education</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="achievements" href="#">Achievements</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-sm py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors border border-outline-variant font-medium" data-path="contact" href="#">Get in touch</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 01 // HERO SECTION -->
+<section class="w-full py-space-3xl lg:py-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-start">
+<!-- Left Narrative Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Status Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+            building in public · seeking 2025 summer software / AI internships
+          </span>
+</div>
+<!-- Primary Warm Serif Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-normal tracking-tight">
+          I build small, reliable <span class="italic text-primary">AI-powered</span> web apps in Python while finishing my CS degree.
+        </h1>
+<!-- Context Subtitle -->
+<p class="font-body-lg text-body-lg text-tertiary max-w-container-reading leading-relaxed">
+          Third-year Computer Science student. Focused on LLM orchestration, semantic search pipelines, FastAPI microservices, and practical web tooling that stays fast under load.
+        </p>
+<!-- Quick Action Bar -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full">
+<a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-150 font-semibold shadow-sm" href="#projects">
+<span>Explore Projects</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+<a class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant transition-colors" href="#about">
+<span>Read About Me</span>
+</a>
+<div class="h-5 w-[1px] bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded bg-surface-container text-tertiary hover:text-primary hover:border-outline transition-colors border border-outline-variant inline-flex items-center" href="https://github.com" rel="noreferrer" target="_blank" title="GitHub Profile">
+<span class="font-label-sm text-label-sm">gh/alexlin</span>
+</a>
+<a class="p-2 rounded bg-surface-container text-tertiary hover:text-primary hover:border-outline transition-colors border border-outline-variant inline-flex items-center" href="mailto:alex.lin.cse@gmail.com" title="Direct Email">
+<span class="font-label-sm text-label-sm">alex.lin.cse@gmail.com</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Visual Column: Live Typed Micro-Terminal -->
+<div class="lg:col-span-5 w-full">
+<div class="rounded-lg bg-surface-container-lowest border border-outline-variant overflow-hidden shadow-xl">
+<!-- Terminal Tab Bar -->
+<div class="px-4 py-2.5 bg-surface-container-low border-b border-outline-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="font-label-sm text-label-sm text-tertiary-container ml-2">app/main.py</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              200 OK · 48ms
+            </span>
+</div>
+<!-- Terminal Code Content -->
+<div class="p-4 font-code-inline text-code-inline overflow-x-auto text-on-surface leading-relaxed select-text">
+<pre class="space-y-1"><code><span class="text-tertiary-container"># Fast async inference endpoint</span>
+<span class="text-secondary">from</span> fastapi <span class="text-secondary">import</span> FastAPI, Depends
+<span class="text-secondary">from</span> pydantic <span class="text-secondary">import</span> BaseModel, Field
+<span class="text-secondary">from</span> pgvector.sqlalchemy <span class="text-secondary">import</span> Vector
+
+app = FastAPI(title=<span class="text-primary">"semantic-core"</span>, version=<span class="text-primary">"0.4.2"</span>)
+
+<span class="text-secondary">class</span> <span class="text-primary">QueryResult</span>(BaseModel):
+    doi: <span class="text-secondary">str</span>
+    similarity: <span class="text-secondary">float</span> = Field(..., ge=0.0, le=1.0)
+    latency_ms: <span class="text-secondary">float</span>
+
+<span class="text-secondary">@app.post</span>(<span class="text-primary">"/search"</span>, response_model=QueryResult)
+<span class="text-secondary">async def</span> <span class="text-on-surface font-medium">hybrid_query</span>(q: <span class="text-secondary">str</span>):
+    embed = <span class="text-secondary">await</span> model.encode_async(q)
+    doc, score = <span class="text-secondary">await</span> db.vector_top_k(embed, k=1)
+    <span class="text-secondary">return</span> QueryResult(
+        doi=doc.doi,
+        similarity=score,
+        latency_ms=48.2
+    )</code></pre>
+</div>
+<!-- Terminal Live Stats Footer -->
+<div class="px-4 py-2 bg-surface-container-low/70 border-t border-outline-variant flex items-center justify-between text-tertiary font-label-sm text-label-sm">
+<span>Uvicorn running on http://127.0.0.1:8000</span>
+<span class="text-secondary">Python 3.11</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- 02 // ABOUT SECTION -->
+<section class="w-full py-space-3xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto" id="about">
+<div class="flex flex-col gap-space-lg max-w-container-reading">
+<!-- Section Header -->
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-primary">01 //</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">About</h2>
+</div>
+<!-- Authentic Body Copy -->
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+        I'm three years into a CSE degree, building small AI-powered apps in Python while I learn. Most of my coursework covers systems, algorithms, and distributed databases, but my evenings go into turning rough prototypes into things people actually use.
+      </p>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed">
+        I care a lot about deterministic outputs, sub-100ms response times, and simple interfaces over bloated agent frameworks. I believe practical developer tooling and tight vector pipelines beat overly ambitious multi-agent systems every single time.
+      </p>
+<!-- Key Focus Breakdown -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-md">
+<!-- Card 1 -->
+<div class="p-4 rounded-lg bg-surface-container border border-outline-variant flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Focus</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Retrieval-Augmented Generation</span>
+<p class="font-body-sm text-body-sm text-tertiary">Lightweight local models, embedding quantization, and resilient backend microservices.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-4 rounded-lg bg-surface-container border border-outline-variant flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Core Tools</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Python &amp; Vector Stores</span>
+<p class="font-body-sm text-body-sm text-tertiary">FastAPI, PyTorch basics, TypeScript, Postgres with pgvector, and Dockerized runtimes.</p>
+</div>
+<!-- Card 3 -->
+<div class="p-4 rounded-lg bg-surface-container border border-outline-variant flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wider">Reading List</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Systems &amp; Latency</span>
+<p class="font-body-sm text-body-sm text-tertiary">Distributed systems papers, KV cache optimization, and efficient inference serving.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- 03 // SKILLS SECTION -->
+<section class="w-full py-space-3xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto" id="skills">
+<div class="flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-primary">02 //</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">Skills &amp; Tooling</h2>
+</div>
+<!-- Functional Role Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Category 1: Backend & APIs -->
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Backend &amp; APIs</h3>
+<span class="material-symbols-outlined text-primary text-[20px]">dns</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Constructing strictly-typed async endpoints, database transactions, background task pipelines, and resilient cache layers.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-secondary">python</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-secondary">fastapi</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-secondary">pydantic</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-secondary">sqlalchemy</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-secondary">celery</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-secondary">redis</span>
+</div>
+</div>
+<!-- Category 2: AI & Data -->
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AI &amp; Data</h3>
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Implementing hybrid semantic chunking, vector indexing with distance heuristics, and local transformer inference workflows.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-primary">langchain</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-primary">llamaindex</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-primary">pgvector</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-primary">transformers</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-primary">numpy</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-primary">postgresql</span>
+</div>
+</div>
+<!-- Category 3: Frontend & Delivery -->
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Frontend &amp; Delivery</h3>
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Shipping low-latency user interfaces backed by continuous integration checks, containerized micro-hosts, and clean Linux environments.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-on-surface">typescript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-on-surface">react</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-on-surface">next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-on-surface">docker</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-on-surface">github actions</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant text-label-sm font-label-sm text-on-surface">linux</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- 04 // PROJECTS SECTION (FLAGSHIP EMPHASIS) -->
+<section class="w-full py-space-3xl lg:py-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto" id="projects">
+<div class="flex flex-col gap-space-2xl">
+<!-- Section Intro Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-md text-label-md text-primary">03 //</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">Projects</h2>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Things I've built, deployed, and benchmarked.</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-container">4 production repositories · live deployments</span>
+</div>
+<!-- PROJECT 1: Heavyweight Flagship Card (12-col) -->
+<div class="p-space-lg lg:p-space-xl rounded-lg bg-surface-container border border-outline-variant hover:border-outline hover:bg-surface-container-high transition-all duration-200">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Flagship Metadata & Narrative -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-surface-container-lowest border border-outline-variant text-label-sm font-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Active v0.4.2
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary-container">Flagship System · 2024–2025</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+              PaperTrace — Semantic ArXiv Search &amp; Synthesis
+            </h3>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed">
+              Embeds daily Computer Science arXiv abstracts directly into a vector store. Uses hybrid search (BM25 keyword matching coupled with cosine similarity over quantized embeddings) to extract relevant methodology sections, answering researcher queries with verified citations.
+            </p>
+<!-- Technical Constraints & Measurable Specs -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm p-space-md rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm">
+<div>
+<span class="text-tertiary-container block">P95 Latency</span>
+<span class="text-primary font-medium text-body-md">120ms</span>
+</div>
+<div>
+<span class="text-tertiary-container block">Hosting Target</span>
+<span class="text-on-surface font-medium text-body-md">$7/mo VPS</span>
+</div>
+<div>
+<span class="text-tertiary-container block">Vectors Indexed</span>
+<span class="text-on-surface font-medium text-body-md">48,500+</span>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">fastapi</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">pgvector</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">sentence-transformers</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-secondary">react</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors font-medium" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>GitHub Repo</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md border border-outline-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Live Search Demo</span>
+</a>
+</div>
+</div>
+<!-- Flagship Interactive / Visual Architecture Panel -->
+<div class="lg:col-span-5 w-full flex flex-col gap-space-sm">
+<div class="rounded bg-surface-container-lowest border border-outline-variant p-space-md flex flex-col gap-3 font-code-inline text-code-inline">
+<div class="flex items-center justify-between text-tertiary-container font-label-sm text-label-sm border-b border-outline-variant pb-2">
+<span>Architecture Topology</span>
+<span class="text-secondary">pipeline_flow.svg</span>
+</div>
+<!-- Clean SVG Architecture Flow Diagram -->
+<svg class="w-full h-auto text-tertiary" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 400 210">
+<!-- Ingestion Node -->
+<rect class="fill-surface-container stroke-outline-variant" height="45" rx="4" width="105" x="10" y="20"></rect>
+<text fill="#E1E2E9" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="62" y="42">arXiv Crawler</text>
+<text fill="#A3ADBB" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="62" y="55">daily cron / raw xml</text>
+<!-- Arrow 1 -->
+<path d="M 115 42 L 145 42" marker-end="url(#arrow)" stroke="#9E8F7A"></path>
+<!-- Pipeline / Embedding Node -->
+<rect class="fill-surface-container stroke-primary" height="45" rx="4" width="110" x="145" y="20"></rect>
+<text fill="#FFBC3F" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="200" y="42">all-MiniLM-L6</text>
+<text fill="#D5C4AD" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="200" y="55">quantized (int8)</text>
+<!-- Arrow 2 -->
+<path d="M 255 42 L 285 42" stroke="#9E8F7A"></path>
+<!-- Storage Node -->
+<rect class="fill-surface-container stroke-outline-variant" height="45" rx="4" width="105" x="285" y="20"></rect>
+<text fill="#E1E2E9" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="337" y="42">PostgreSQL</text>
+<text fill="#FFC55D" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="337" y="55">+ pgvector HNSW</text>
+<!-- Flow Down to Serving -->
+<path d="M 337 65 L 337 115 L 200 115" stroke="#9E8F7A"></path>
+<!-- FastAPI Hybrid Serving -->
+<rect class="fill-surface-container-high stroke-primary" height="50" rx="4" width="160" x="80" y="95"></rect>
+<text fill="#FFBC3F" font-family="JetBrains Mono" font-size="11" text-anchor="middle" x="160" y="118">FastAPI Search API</text>
+<text fill="#E1E2E9" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="160" y="133">BM25 + Cosine RRF (k=60)</text>
+<!-- Client Flow -->
+<path d="M 160 145 L 160 170" stroke="#9E8F7A"></path>
+<rect class="fill-surface-container stroke-outline-variant" height="32" rx="4" width="110" x="105" y="170"></rect>
+<text fill="#E1E2E9" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="160" y="190">Client Frontend</text>
+</svg>
+<!-- In-Card Terminal Log Snippet -->
+<div class="bg-surface-dim p-2.5 rounded border border-outline-variant text-[11px] font-label-sm text-tertiary flex flex-col gap-1">
+<div class="flex justify-between text-secondary">
+<span>[INDEXER]</span>
+<span>batch_size=64</span>
+</div>
+<div>&gt; HNSW index built in 842ms (m=16, ef_construction=64)</div>
+<div class="text-primary">&gt; Recall@10 verified: 0.941 on test corpus</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Projects 3-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- PROJECT 2: DocuDiff -->
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant hover:border-outline hover:bg-surface-container-high transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Local AI · 2024</span>
+<a class="text-tertiary hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank" title="Repository">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">DocuDiff — Local PDF Comparison with Vision LLM</h4>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Compares revised legal and technical specifications side-by-side using local vision models to highlight structural and semantic text deviations without sending data to external cloud APIs.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs border-t border-outline-variant">
+<div class="text-label-sm font-label-sm text-tertiary-container flex items-center justify-between">
+<span>Zero-egress privacy</span>
+<span class="text-on-surface font-medium">Ollama + Llama-3.2-Vision</span>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">python</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">ollama</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-secondary">streamlit</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-tertiary">pymupdf</span>
+</div>
+</div>
+</div>
+<!-- PROJECT 3: QueryLens -->
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant hover:border-outline hover:bg-surface-container-high transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Parser / Tooling · 2024</span>
+<a class="text-tertiary hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank" title="Repository">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">QueryLens — NL to SQL with AST Schema Validation</h4>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Translates analyst queries into validated read-only SQL queries against DuckDB; passes queries through an AST tokenizer to mathematically prevent unintended write/drop mutations.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs border-t border-outline-variant">
+<div class="text-label-sm font-label-sm text-tertiary-container flex items-center justify-between">
+<span>Execution Guarantee</span>
+<span class="text-on-surface font-medium">Read-Only Enforced</span>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">fastapi</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">pydantic</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-secondary">duckdb</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-tertiary">sqlglot</span>
+</div>
+</div>
+</div>
+<!-- PROJECT 4: PromptBench -->
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant hover:border-outline hover:bg-surface-container-high transition-all flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">CLI &amp; Benchmarks · 2024</span>
+<a class="text-tertiary hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank" title="Repository">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">PromptBench — Micro-benchmarking LLM Latency &amp; Cost</h4>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Terminal utility and lightweight dashboard for comparing token throughput (tok/sec) and streaming time-to-first-token across self-hosted vLLM containers and commercial endpoints.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs border-t border-outline-variant">
+<div class="text-label-sm font-label-sm text-tertiary-container flex items-center justify-between">
+<span>Measurement Jitter</span>
+<span class="text-on-surface font-medium">&lt; 3.5ms variance</span>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">asyncio</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-primary">httpx</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-secondary">rich-cli</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest border border-outline-variant font-label-sm text-label-sm text-tertiary">python</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- 05 // EDUCATION SECTION -->
+<section class="w-full py-space-3xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto" id="education">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Section Title -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-primary">04 //</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">Education</h2>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Foundations and theoretical coursework.</p>
+</div>
+<!-- Education Details -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-lg bg-surface-container border border-outline-variant flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">B.S. in Computer Science &amp; Engineering</h3>
+<p class="font-body-md text-body-md text-secondary">University Computer Science Department</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-surface-container-highest px-2.5 py-1 rounded">Expected May 2026</span>
+</div>
+<!-- Standing & Honors -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Dean's Honor Roll (3 consecutive semesters)
+            </span>
+<span class="text-outline-variant">·</span>
+<span class="text-tertiary">CS Department Student Mentor</span>
+</div>
+<!-- Coursework Pills -->
+<div class="flex flex-col gap-2 pt-space-xs border-t border-outline-variant">
+<span class="font-label-sm text-label-sm text-tertiary-container">Relevant Coursework:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant font-body-sm text-body-sm text-on-surface">Algorithms &amp; Data Structures</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant font-body-sm text-body-sm text-on-surface">Operating Systems</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant font-body-sm text-body-sm text-on-surface">Database Management Systems</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant font-body-sm text-body-sm text-on-surface">Linear Algebra</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant font-body-sm text-body-sm text-on-surface">Machine Learning Fundamentals</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- 06 // ACHIEVEMENTS SECTION -->
+<section class="w-full py-space-3xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto" id="achievements">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Section Title -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-primary">05 //</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">Achievements</h2>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Practical milestones and accepted contributions.</p>
+</div>
+<!-- Achievement List -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant flex items-start gap-space-md">
+<div class="p-2 rounded bg-surface-container-high text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">emoji_events</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Winner, Campus Hackathon 2024 (AI Track)</span>
+<span class="font-label-sm text-label-sm text-tertiary-container">Nov 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Built an accessible audio-summarization tool for low-bandwidth campus lectures in 24 hours. Processed streaming chunks using Whisper.cpp and local Llama inference to provide searchable transcripts with timestamps.
+            </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant flex items-start gap-space-md">
+<div class="p-2 rounded bg-surface-container-high text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">merge</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Open Source Contributor</span>
+<span class="font-label-sm text-label-sm text-tertiary-container">2024–Present</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Submitted accepted pull requests to lightweight Python CLI tooling and schema documentation generators, improving error diagnostics and typed model serialization.
+            </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant flex items-start gap-space-md">
+<div class="p-2 rounded bg-surface-container-high text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Undergraduate Teaching Assistant</span>
+<span class="font-label-sm text-label-sm text-tertiary-container">Spring 2024 · Fall 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Assisting sophomore students in Data Structures &amp; Python lab sessions. Debugged student pointer implementations, algorithmic bottlenecks, and recursive call traces during office hours.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION DIVIDER -->
+<div class="w-full max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- 07 // CONTACT SECTION -->
+<section class="w-full py-space-3xl lg:py-space-4xl px-gutter-mobile lg:px-gutter-desktop max-w-container-max mx-auto" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+<!-- Contact Narrative & Details -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-primary">06 //</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-normal">Let's connect</h2>
+</div>
+<p class="font-body-lg text-body-lg text-tertiary leading-relaxed">
+          I'm actively looking for summer 2025 software engineering or applied AI internships. If you're building thoughtful software or just want to talk Python, my inbox is open.
+        </p>
+<!-- Direct Copyable Email Card -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary shrink-0">mail</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary-container block">Direct Email</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium truncate block" id="email-text">alex.lin.cse@gmail.com</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-secondary hover:text-primary font-label-sm text-label-sm border border-outline-variant transition-colors shrink-0" id="copy-email-btn">
+            Copy
+          </button>
+</div>
+<!-- Social Quick Links -->
+<div class="flex items-center gap-space-lg pt-space-xs font-label-md text-label-md">
+<a class="text-tertiary hover:text-primary transition-colors flex items-center gap-1.5" href="https://github.com" rel="noreferrer" target="_blank">
+<span>github.com/alexlin</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<a class="text-tertiary hover:text-primary transition-colors flex items-center gap-1.5" href="https://linkedin.com" rel="noreferrer" target="_blank">
+<span>linkedin.com/in/alex-lin-cs</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Compact Inquiry Form -->
+<div class="lg:col-span-6 w-full">
+<form class="p-space-lg rounded-lg bg-surface-container border border-outline-variant flex flex-col gap-space-md shadow-sm" id="contact-form">
+<div class="flex items-center justify-between border-b border-outline-variant pb-3">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Quick Note</span>
+<span class="font-label-sm text-label-sm text-tertiary-container">Replies within 24h</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="sender-name">Name</label>
+<input class="w-full px-3 py-2 rounded bg-surface-container-lowest border border-outline-variant text-on-surface font-body-sm text-body-sm placeholder:text-tertiary-container focus:outline-none focus:border-primary transition-colors" id="sender-name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="sender-email">Email</label>
+<input class="w-full px-3 py-2 rounded bg-surface-container-lowest border border-outline-variant text-on-surface font-body-sm text-body-sm placeholder:text-tertiary-container focus:outline-none focus:border-primary transition-colors" id="sender-email" placeholder="jane@company.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface" for="sender-message">Message</label>
+<textarea class="w-full px-3 py-2 rounded bg-surface-container-lowest border border-outline-variant text-on-surface font-body-sm text-body-sm placeholder:text-tertiary-container focus:outline-none focus:border-primary transition-colors resize-none" id="sender-message" placeholder="Hey Alex, saw your PaperTrace project. We're interviewing for summer backend roles..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-2.5 px-4 rounded bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-medium transition-colors flex items-center justify-center gap-2 mt-1" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<p class="hidden font-label-sm text-label-sm text-secondary text-center" id="form-status"></p>
+</form>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Copy Email Micro-interaction
+  const copyBtn = document.getElementById('copy-email-btn');
+  const emailText = document.getElementById('email-text');
+
+  if (copyBtn && emailText) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(emailText.textContent.trim()).then(() => {
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = 'Copied!';
+        copyBtn.classList.add('text-primary');
+        setTimeout(() => {
+          copyBtn.textContent = originalText;
+          copyBtn.classList.remove('text-primary');
+        }, 2000);
+      }).catch(() => {
+        copyBtn.textContent = 'Failed';
+      });
+    });
+  }
+
+  // Simple Clean Form Feedback
+  const form = document.getElementById('contact-form');
+  const statusMsg = document.getElementById('form-status');
+
+  if (form && statusMsg) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      statusMsg.textContent = "Thanks for reaching out. I'll get back to you shortly.";
+      statusMsg.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => {
+        statusMsg.classList.add('hidden');
+      }, 5000);
+    });
+  }
+</script></main><div class="md:hidden fixed bottom-space-md right-space-md z-40"><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-lg border border-outline-variant" data-path="contact" href="#"><span class="material-symbols-outlined text-[18px]">mail</span><span>Contact</span></a></div><footer class="w-full bg-surface-container-low border-t border-outline-variant"><div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left"><span class="font-label-sm text-label-sm text-tertiary-container">© 2025 Alex Lin. Built with Python &amp; ML in mind.</span><span class="hidden sm:inline text-outline-variant">|</span><span class="font-label-sm text-label-sm text-tertiary-container flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Local Time: UTC-8 (PST)</span></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" rel="noreferrer" target="_blank">LinkedIn</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="research-notes" href="#">Research Notes</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="rss" href="#">RSS</a></div></div></footer></body></html>
