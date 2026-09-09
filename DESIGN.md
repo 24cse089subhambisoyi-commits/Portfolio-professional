@@ -1,126 +1,72 @@
 ---
 name: Ink & Amber Portfolio
 colors:
-  surface: '#101418'
-  surface-dim: '#101418'
-  surface-bright: '#36393f'
-  surface-container-lowest: '#0b0e13'
-  surface-container-low: '#191c21'
-  surface-container: '#1d2025'
-  surface-container-high: '#272a2f'
-  surface-container-highest: '#32353a'
-  on-surface: '#e1e2e9'
-  on-surface-variant: '#d5c4ad'
-  inverse-surface: '#e1e2e9'
-  inverse-on-surface: '#2e3036'
-  outline: '#9e8f7a'
-  outline-variant: '#514534'
-  surface-tint: '#ffba36'
-  primary: '#ffbc3f'
-  on-primary: '#432c00'
+  surface: '#f8f9ff'
+  surface-dim: '#d8dae1'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f3fa'
+  surface-container: '#ecedf5'
+  surface-container-high: '#e6e8ef'
+  surface-container-highest: '#e1e2e9'
+  on-surface: '#191c21'
+  on-surface-variant: '#514534'
+  inverse-surface: '#2e3036'
+  inverse-on-surface: '#eff0f8'
+  outline: '#837561'
+  outline-variant: '#d5c4ad'
+  surface-tint: '#7e5700'
+  primary: '#7e5700'
+  on-primary: '#ffffff'
   primary-container: '#e3a008'
   on-primary-container: '#573b00'
-  inverse-primary: '#7e5700'
-  secondary: '#ffc55d'
-  on-secondary: '#422c00'
-  secondary-container: '#eaa700'
-  on-secondary-container: '#5d4000'
-  tertiary: '#bec8d7'
-  on-tertiary: '#28313c'
-  tertiary-container: '#a3adbb'
-  on-tertiary-container: '#37414d'
-  error: '#ffb4ab'
-  on-error: '#690005'
-  error-container: '#93000a'
-  on-error-container: '#ffdad6'
+  inverse-primary: '#ffba36'
+  secondary: '#555f6c'
+  on-secondary: '#ffffff'
+  secondary-container: '#d9e3f2'
+  on-secondary-container: '#5b6572'
+  tertiary: '#5a5f68'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#a8adb7'
+  on-tertiary-container: '#3c414a'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
   primary-fixed: '#ffdeac'
   primary-fixed-dim: '#ffba36'
   on-primary-fixed: '#281900'
   on-primary-fixed-variant: '#604100'
-  secondary-fixed: '#ffdeaa'
-  secondary-fixed-dim: '#ffba2c'
-  on-secondary-fixed: '#271900'
-  on-secondary-fixed-variant: '#5f4100'
-  tertiary-fixed: '#d9e3f2'
-  tertiary-fixed-dim: '#bdc7d6'
-  on-tertiary-fixed: '#131c27'
-  on-tertiary-fixed-variant: '#3e4853'
-  background: '#101418'
-  on-background: '#e1e2e9'
-  surface-variant: '#32353a'
+  secondary-fixed: '#d9e3f2'
+  secondary-fixed-dim: '#bdc7d6'
+  on-secondary-fixed: '#131c27'
+  on-secondary-fixed-variant: '#3e4853'
+  tertiary-fixed: '#dee2ee'
+  tertiary-fixed-dim: '#c2c6d1'
+  on-tertiary-fixed: '#171c24'
+  on-tertiary-fixed-variant: '#424750'
+  background: '#f8f9ff'
+  on-background: '#191c21'
+  surface-variant: '#e1e2e9'
 typography:
-  headline-xl:
-    fontFamily: Newsreader
+  display:
+    fontFamily: Source Serif 4
     fontSize: 3.5rem
-    fontWeight: '400'
-    lineHeight: '1.15'
+    fontWeight: '600'
+    lineHeight: 4rem
     letterSpacing: -0.02em
-  headline-xl-mobile:
-    fontFamily: Newsreader
-    fontSize: 2.25rem
-    fontWeight: '400'
-    lineHeight: '1.2'
-    letterSpacing: -0.015em
-  headline-lg:
-    fontFamily: Newsreader
-    fontSize: 2.25rem
-    fontWeight: '400'
-    lineHeight: '1.25'
-    letterSpacing: -0.01em
-  headline-lg-mobile:
-    fontFamily: Newsreader
-    fontSize: 1.75rem
-    fontWeight: '400'
-    lineHeight: '1.3'
-    letterSpacing: -0.01em
-  headline-md:
-    fontFamily: Newsreader
-    fontSize: 1.5rem
-    fontWeight: '500'
-    lineHeight: '1.35'
-    letterSpacing: -0.005em
-  headline-sm:
-    fontFamily: Newsreader
-    fontSize: 1.25rem
-    fontWeight: '500'
-    lineHeight: '1.4'
-    letterSpacing: '0'
   body-lg:
-    fontFamily: Inter
+    fontFamily: Plus Jakarta Sans
     fontSize: 1.125rem
     fontWeight: '400'
-    lineHeight: '1.7'
-    letterSpacing: -0.01em
-  body-md:
-    fontFamily: Inter
-    fontSize: 1rem
-    fontWeight: '400'
-    lineHeight: '1.65'
-    letterSpacing: -0.005em
-  body-sm:
-    fontFamily: Inter
-    fontSize: 0.875rem
-    fontWeight: '400'
-    lineHeight: '1.6'
+    lineHeight: 1.85rem
     letterSpacing: '0'
-  label-md:
+  label-code:
     fontFamily: JetBrains Mono
-    fontSize: 0.875rem
+    fontSize: 0.8125rem
     fontWeight: '500'
-    lineHeight: '1.4'
-    letterSpacing: -0.01em
-  label-sm:
-    fontFamily: JetBrains Mono
-    fontSize: 0.75rem
-    fontWeight: '500'
-    lineHeight: '1.35'
+    lineHeight: 1.25rem
     letterSpacing: 0.02em
-  code-inline:
-    fontFamily: JetBrains Mono
-    fontSize: 0.875rem
-    fontWeight: '400'
-    lineHeight: '1.4'
-    letterSpacing: '0'
 rounded:
   sm: 0.125rem
   DEFAULT: 0.25rem
@@ -138,114 +84,98 @@ spacing:
   space-2xl: 3rem
   space-3xl: 4.5rem
   space-4xl: 6rem
-  container-max: 68rem
-  container-reading: 42rem
-  gutter-mobile: 1.25rem
-  gutter-desktop: 2rem
+  gutter-mobile: 1rem
+  gutter-desktop: 1.5rem
+  container-max: 72rem
+  prose-max: 42rem
 ---
 
 ## Brand & Style
 
-This design system expresses the voice and practice of a third-year Computer Science undergraduate specializing in Python systems, machine learning engineering, and AI-powered web applications. It eschews generic developer aesthetics—there are no neon glow gradients, faux glassmorphic cards, or floating isometric primitives. Instead, it pairs the academic rigor and depth of editorial publishing with the disciplined clarity of modern developer tools.
+This design system establishes the visual presence of a 3rd-year computer science student developing AI-driven web applications in Python. The tone is deliberate, grounded, and academically rigorous without lapsing into sterile corporate templates or exaggerated startup tropes. It rejects marketing jargon, fabricated impact statistics, and decorative AI tropes like iridescent gradients or neon orbital nodes.
 
-The brand persona is quiet, technically assured, direct, and pragmatic. Communication is written strictly in the first-person present tense ("I build", "I research", "I design"), completely devoid of marketing hype, corporate fluff, or resume hyperbole. The visual language evokes an engineer's notebook meets a refined terminal interface: deliberate typography, structured data hierarchy, tactile borders, and focused amber highlights that direct visual attention to architecture decisions, technical constraints, and measurable impact.
+The aesthetic fuses modern technical minimalism with editorial warmth. Crisp, atmospheric light tones provide a clean digital foundation akin to a focused studio or daytime reading environment. This is balanced by the tactile humanity of bookish serif typography and glowing amber accents, evoking the feeling of an architect's desk or an engineer's leather-bound notebook under warm desk lighting.
+
+Interfaces built with this system should project clarity, technical craft, and intellectual curiosity. Surfaces remain calm, allowing code samples, architecture diagrams, and plain-language case studies to lead the experience.
 
 ## Colors
 
-The palette centers on a disciplined dark theme anchored by "Ink & Amber." The foundation uses deep charcoal-navy tones rather than lifeless pure blacks, preserving richness and depth while sustaining contrast levels well above WCAG AAA standards for body and interface text.
+The palette operates in a default light mode calibrated for readability and clarity without harsh contrast.
 
-### Surface Tiers
-- **surface-base (`#14171C`)**: The foundational canvas for the entire viewport.
-- **surface-card (`#1B2027`)**: Primary container level for project items, code blocks, and structured groups.
-- **surface-card-hover (`#222832`)**: Interactive state elevating cards on cursor proximity or focus.
-- **surface-code (`#0F1216`)**: Deepest recessed container, reserved specifically for inline shell sessions and Python terminal outputs.
-
-### Borders & Dividers
-- **border-muted (`#29303D`)**: Structural framing for cards, section lines, and subtle horizontal rules.
-- **border-subtle (`#1F242D`)**: Secondary interior dividers within complex cards.
-- **amber-border (`rgba(227, 160, 8, 0.35)`)**: Focused emphasis for active states, tags, and selected project nodes.
-
-### Accents & Status
-- **amber-primary (`#E3A008`)**: The primary kinetic focal point. Used for interactive buttons, active tab indicators, and critical metadata highlights.
-- **amber-hover (`#F5B014`)**: Direct interaction state providing subtle luminosity without halo bloom.
-- **amber-subtle-bg (`rgba(227, 160, 8, 0.12)`)**: Low-energy contextual fill used behind skill pills, status badges, and inline key variables.
-
-### Text Contrast Tiers
-- **text-primary (`#EDEFF2`)**: Near-white, delivering an intentional 13.5:1 contrast against `surface-base` for effortless sustained reading.
-- **text-secondary (`#A3ADBB`)**: Slate-grey for descriptive copy, metadata annotations, and context notes (exceeding 6.5:1 ratio).
-- **text-muted (`#6D7786`)**: Strictly for inactive icons, timestamp brackets, and structural punctuation.
+- **Primary Accent (`#E3A008`)**: A focused, radiant warm amber. Reserved strictly for primary callouts, active indicators, interactive links, code highlights, and persistent interaction targets. It should be applied deliberately to retain its luminous weight.
+- **Secondary (`#A3ADBB`)**: A muted slate-grey. Governs secondary body copy, captions, structural outlines, inactive icons, and metadata tags.
+- **Tertiary / Elevated Surface (`#1E232B`)**: An offset charcoal tone used for elevated card containers, code block backgrounds, and input wells in light mode.
+- **Neutral / Canvas (`#14171C`)**: Deep charcoal-navy base. Acts as the foundational plane across all viewports.
+- **Text Primary (`#EDEFF2`)**: Near-white text with a slight cool tint to maintain contrast against structured containers.
+- **Subtle Border (`rgba(163, 173, 187, 0.12)`)**: A hairline boundary used to delineate containers and separate content sections cleanly.
 
 ## Typography
 
-The typographic hierarchy establishes tension between the warmth of a bookish editorial serif and the technical precision of a monospaced terminal font, mediated by a hyper-legible sans-serif for working prose.
+The typographic hierarchy balances literary authority and precise execution.
 
-1. **Headlines (`Newsreader`)**: Warm, humanist, and literary. Headlines evoke serious academic essays and monographs. It frames engineering work with maturity, treating case studies as documented investigations rather than flashy product pitches.
-2. **Body (`Inter`)**: Neutral, transparent, and legible at small sizes. Used across personal narratives, long-form project summaries, and structural content.
-3. **Labels & Metadata (`JetBrains Mono`)**: Strict, technical, and rhythmic. Applied deliberately and exclusively to technological tags (e.g., `PyTorch`, `FastAPI`), performance metrics (e.g., `latency: 42ms`, `params: 7B`), Git commit hashes, section numberings (`01 //`, `02 //`), and raw code snippets.
+- **Headings (`Source Serif 4`)**: Chosen for its robust, unpretentious humanist serifs. Provides thoughtful pacing to project overviews and personal statements. It remains grounded, avoiding ornamental hair-lines.
+- **Body & Interface (`Plus Jakarta Sans`)**: Clean, contemporary, and legible at small sizes. Used for descriptive project narratives, workflow explanations, and core navigation.
+- **Technical Badges & Code (`JetBrains Mono`)**: Strict, geometric monospacing for tech stack chips, terminal references, performance telemetry, and system architecture labels.
+- **Hierarchy Rules**: Project case study titles use serif headlines, while nested section subtitles pivot to medium-weight sans-serif for functional reading. Line lengths for prose should never exceed 68 characters to preserve effortless scanning.
 
 ## Layout & Spacing
 
-The layout philosophy balances spacious editorial storytelling with compact, information-dense technical overviews.
+The portfolio is structured mobile-first, prioritizing seamless reading flow, immediate context, and fingertip reachability before scaling to widescreen viewports.
 
-### Two-Paced Spacing Model
-- **Airy Rhythm (Hero, Statement, Contact)**: Employs wide vertical padding (`space-3xl` to `space-4xl`) and generous body line-heights within a constrained reading measure (`container-reading`, max 680px). This forces intentional pacing, welcoming recruiters and collaborators with an open, unhurried reading experience.
-- **Dense Structural Rhythm (Projects & Architecture Breakdowns)**: Shifts into an information-dense, multi-column grid with compact padding (`space-md` to `space-lg`). Content conforms to an inspectable layout: system architecture, tech stacks, input/output data, and live links arranged side-by-side without excess vertical scroll travel.
-
-### Grid Architecture
-- **Desktop (>= 1024px)**: 12-column grid within a max-width of `68rem` (1088px), centered with `gutter-desktop` margin padding. Project cards span 6 columns (2-up) or 12 columns for featured deep-dives.
-- **Tablet (768px - 1023px)**: 8-column layout. Project grids drop from 2-up to structured single-column entries when technical metadata requires horizontal room.
-- **Mobile (< 768px)**: 4 columns with `gutter-mobile` edge padding. Horizontal metadata tags wrap into compact pill-stacks.
+- **Grid Architecture**:
+  - **Mobile (<768px)**: Single column with `1rem` (16px) margins. All primary actions and technical project previews stack vertically.
+  - **Tablet (768px - 1024px)**: 6-column layout with `1.25rem` gutters and `2rem` margins.
+  - **Desktop (>1024px)**: 12-column grid capped at a maximum width of `72rem` (1152px) centered horizontally, with `1.5rem` gutters. Narrative case studies utilize an asymmetric structure (4 columns for meta-information/stack specs and 8 columns for engineering breakdown).
+- **Rhythm**: Vertical flow follows an 8px baseline rhythm (`0.5rem`, `1rem`, `1.5rem`, `2rem`, `3rem`). Component groupings use compact spacing (`0.5rem` to `1rem`), while project sections breathe with generous negative margins (`3rem` on mobile, `4.5rem` to `6rem` on desktop).
 
 ## Elevation & Depth
 
-Visual hierarchy avoids drop shadows, fuzzy glows, and faux 3D physics. Elevation is communicated entirely through tonal stratification and micro-borders:
+This system avoids aggressive skeuomorphism and diffuse, heavy drop shadows. Depth is achieved via **tonal stratification** coupled with low-contrast, hairline outlines.
 
-1. **Base Plane**: `surface-base` (`#14171C`) sits as the root background layer.
-2. **Container Tier**: Cards, technical sidebars, and input surfaces sit directly on `surface-card` (`#1B2027`) framed by a razor-thin 1px solid stroke of `border-muted` (`#29303D`).
-3. **Hover & Interactive Elevation**: Hover states do not project shadows outward; instead, they brighten the container fill to `surface-card-hover` (`#222832`) and crisp the stroke toward `amber-border` or `text-secondary`.
-4. **Recessed Sub-containers**: Code blocks, performance metrics, and console samples recess beneath the card plane into `surface-code` (`#0F1216`) with a 1px inset border of `border-subtle` (`#1F242D`).
+- **Base Layer (Elevation 0)**: Background canvas (`#14171C`). Flat, unbordered.
+- **Card Layer (Elevation 1)**: `#1E232B` surfaced with a 1px solid border of `rgba(163, 173, 187, 0.12)`. No shadow is present at rest.
+- **Interactive Hover (Elevation 2)**: The card background remains `#1E232B`, while the border transitions to `rgba(227, 160, 8, 0.35)` accompanied by a subtle amber halo: `0 4px 20px -2px rgba(227, 160, 8, 0.08)`.
+- **Floating Overlay (Elevation 3)**: Employed exclusively for the persistent mobile floating CTA and floating navigation bars. Rendered using `#1E232B` at 85% opacity with backdrop blur (`backdrop-filter: blur(12px)`), a top-hairline highlight of `rgba(237, 239, 242, 0.12)`, and a grounding shadow of `0 8px 32px rgba(0, 0, 0, 0.45)`.
 
 ## Shapes
 
-The design system adopts a soft, disciplined geometry (`roundedness: 1`). Radius scales remain restrained to reinforce technical precision:
+The interface adopts a disciplined, low-radius shape language (`roundedness: 1`). Soft 4px (`0.25rem`) and 8px (`0.5rem`) radiuses reflect an intentional, code-editor-inspired structure rather than consumer-app pill shapes.
 
-- **Base Surfaces & Cards**: `0.25rem` (4px). Clean, precise corners that avoid the casual look of heavy curves while softening harsh geometric wireframes.
-- **Buttons & Interactive Elements**: `0.25rem` (4px) or `0.375rem` (6px) maximum.
-- **Skill Badges & Metadata Chips**: `0.25rem` (4px).
-- **Interactive Badges**: Strictly squared-soft rectangles—circular pill chips are avoided to preserve the terminal-like, modular feel.
+- **Containers & Project Cards**: `0.5rem` (`rounded-lg` token context). Crisp, structured, and rectangular without appearing razor-sharp.
+- **Chips, Badges, and Code Pills**: `0.25rem` (4px). Rectangular with soft edge dampening, reinforcing their identity as technical data indicators.
+- **Buttons**: `0.375rem` (6px). Balanced corner curvature that feels responsive and solid.
+- **Persistent Floating CTA**: `0.5rem` (8px) on desktop; `0.75rem` (12px) when docked on mobile to soften against physical device edges.
 
 ## Components
 
 ### Buttons
-- **Primary Action**: Solid `amber-primary` (`#E3A008`) fill with `#14171C` dark ink text (`label-md`, font weight 600). Hover state shifts fill to `amber-hover` (`#F5B014`). No drop shadows. Focused state provides a 2px offset border in `amber-primary`.
-- **Secondary / Ghost**: Transparent fill, 1px solid `border-muted`, `text-primary`. On hover, background shifts to `surface-card` and border brightens to `text-secondary`.
-- **Inline Text Link**: Underlined text in `amber-primary` with 2px underline offset. Transitions smoothly to `amber-hover` on pointer hover.
+- **Primary CTA**: Background `#E3A008`, foreground `#14171C` (bold weight for immediate contrast), corner radius 6px, padding `0.75rem 1.25rem`. On hover, lightens to `#EDAE1E`. Focus rings utilize an offset 2px ring of `rgba(227, 160, 8, 0.5)`.
+- **Secondary / Ghost Button**: Transparent background with a `1px` border of `rgba(163, 173, 187, 0.25)` and `#EDEFF2` text. Hover shifts border color to `#A3ADBB` and fills background with `rgba(163, 173, 187, 0.06)`.
 
-### Chips & Skill Badges
-- Constructed exclusively with `JetBrains Mono` at `label-sm`.
-- Static/Display variant: `amber-subtle-bg` background, 1px border of `amber-border`, text in `amber-primary`.
-- Neutral Metadata variant: `surface-card-hover` background, 1px border of `border-muted`, text in `text-secondary`.
-- Internal padding: `0.2rem 0.5rem`.
+### Chips & Tech Badges
+- Displayed in `JetBrains Mono` at `0.75rem`.
+- Set against a background of `rgba(30, 35, 43, 0.9)` with a 1px border of `rgba(163, 173, 187, 0.15)`.
+- Text color is `#A3ADBB`. When denoting the primary stack element (e.g., `Python`, `FastAPI`, `PyTorch`), the text shifts to `#E3A008` with a subtle amber border tint.
 
-### Project Cards
-- Background: `surface-card` (`#1B2027`).
-- Border: 1px solid `border-muted` (`#29303D`).
-- Layout: Structured header featuring project title (`headline-sm`), monospaced year/role label, concise 2-line problem statement (`body-sm`), embedded architecture diagram or terminal preview block, and a footer cluster of skill chips paired with external GitHub/demo link anchors.
-- Hover Behavior: Transition background color to `surface-card-hover` (`#222832`) and outline color to `amber-border` over 150ms.
+### Persistent Floating CTA (Mobile & Responsive)
+- Fixed to the bottom viewport on mobile screens (`bottom: 1rem`, centered, spanning available width minus padding).
+- Constructed using Elevation 3 (`#1E232B` at 85% opacity with 12px backdrop blur).
+- Hosts a concise status indicator (e.g., a 6px pulsing amber dot indicating "Open for Summer 2025 roles") alongside a direct action button ("Get in Touch" or "View GitHub").
 
-### Form Inputs & Textareas
-- Background: `surface-code` (`#0F1216`).
-- Border: 1px solid `border-muted`.
-- Text: `text-primary` (`Inter`, 1rem).
-- Placeholder: `text-muted`.
-- Focus State: Border snaps to `amber-primary` with a zero-blur outline ring `rgba(227, 160, 8, 0.2)`.
+### Project Case Study Cards
+- Nested within Elevation 1 containers.
+- Structure:
+  1. Technical category and completion date (JetBrains Mono, `#A3ADBB`).
+  2. Project title in `Source Serif 4` (`#EDEFF2`).
+  3. Straightforward 2-sentence summary detailing the problem and algorithmic solution.
+  4. Stack tag array using the Chip component.
+  5. Direct links: "Repository" and "Live Demo" rendered as understated text links with subtle arrow glyphs (`→`).
 
-### Code & Terminal Displays
-- Background: `surface-code` (`#0F1216`).
-- Border: 1px solid `border-muted`.
-- Top header: 32px height containing minimal dot markers or file path notation (e.g., `pipeline/train.py`) in `label-sm` (`#A3ADBB`).
-- Text: `JetBrains Mono` with high-contrast syntax highlighting preserving deep amber for keywords/functions and soft slate for parameters and comments.
+### Inputs & Contact Controls
+- Fields feature a background of `#14171C` inset against the `#1E232B` card surface.
+- Border is 1px `rgba(163, 173, 187, 0.2)`. On focus, the border shifts cleanly to `#E3A008` without default browser outlines.
+- Labels are rendered in `Plus Jakarta Sans` medium at `0.875rem` in `#A3ADBB`.
 
-### Section Headers
-- Prefixed with monospaced numerical indexing: `01 //`, `02 //` in `label-md` colored in `amber-primary`.
-- Followed by the section title in `Newsreader` (`headline-lg`), separated from the content by a full-bleed 1px `border-muted` divider.
+### Code Snippets & Architecture Blocks
+- Dark mono wells with syntax highlighting tailored to warm amber, slate, and muted olive.
+- Includes a subtle copy button anchored top-right with an unobtrusive hover state.
