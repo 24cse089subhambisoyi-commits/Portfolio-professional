@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Mail, Copy, Check, Send, User, MessageSquare } from 'lucide-react';
+import { Mail, Copy, Check, Send, User, MessageSquare, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import { userProfileData } from '../data/portfolioData';
 
 export const ContactForm: React.FC = () => {
@@ -10,7 +11,8 @@ export const ContactForm: React.FC = () => {
     subject: '',
     message: '',
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState<{ type: 'success' | 'error' | 'warning'; message: string } | null>(null);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(userProfileData.email);
@@ -18,14 +20,61 @@ export const ContactForm: React.FC = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.email || !formData.message) return;
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
+    if (!formData.name || !formData.email || !formData.message) return;
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (
+      !serviceId ||
+      serviceId === 'your_service_id' ||
+      !templateId ||
+      templateId === 'your_template_id' ||
+      !publicKey ||
+      publicKey === 'your_public_key'
+    ) {
+      setStatus({
+        type: 'warning',
+        message: 'EmailJS API keys are not configured yet in .env file or Vercel Environment Variables.',
+      });
+      return;
+    }
+
+    setIsSending(true);
+    setStatus(null);
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          reply_to: formData.email,
+          subject: formData.subject || 'Portfolio Inquiry',
+          message: formData.message,
+          to_name: userProfileData.name || 'Subham Bisoyi',
+        },
+        publicKey
+      );
+
+      setStatus({
+        type: 'success',
+        message: '✓ Message sent successfully! Thank you for reaching out.',
+      });
       setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 4000);
+    } catch (err: any) {
+      console.error('EmailJS submit error:', err);
+      setStatus({
+        type: 'error',
+        message: err?.text || err?.message || 'Failed to send message. Please try sending directly via email link above.',
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -64,11 +113,22 @@ export const ContactForm: React.FC = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         <h3 className="font-bold text-on-surface text-lg mb-2">Send a Direct Message</h3>
 
-        {submitted ? (
-          <div className="p-4 rounded-lg bg-primary/10 border border-primary/30 text-primary font-mono text-xs text-center animate-in fade-in duration-300">
-            ✓ Message sent! Thank you for reaching out to Subham.
+        {status && (
+          <div
+            className={`p-4 rounded-lg border font-mono text-xs text-center flex items-center justify-center gap-2 animate-in fade-in duration-300 ${
+              status.type === 'success'
+                ? 'bg-green-500/10 border-green-500/30 text-green-400'
+                : status.type === 'warning'
+                ? 'bg-amber-500/10 border-amber-500/30 text-amber-400'
+                : 'bg-red-500/10 border-red-500/30 text-red-400'
+            }`}
+          >
+            {status.type === 'success' && <CheckCircle2 className="w-4 h-4 shrink-0" />}
+            {status.type === 'warning' && <AlertCircle className="w-4 h-4 shrink-0" />}
+            {status.type === 'error' && <AlertCircle className="w-4 h-4 shrink-0" />}
+            <span>{status.message}</span>
           </div>
-        ) : null}
+        )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -130,12 +190,23 @@ export const ContactForm: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full py-3 bg-primary hover:bg-primary-dim text-on-primary font-mono text-sm font-semibold rounded-lg shadow-md hover:shadow-primary/20 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+          disabled={isSending}
+          className="w-full py-3 bg-primary hover:bg-primary-dim disabled:opacity-60 disabled:cursor-not-allowed text-on-primary font-mono text-sm font-semibold rounded-lg shadow-md hover:shadow-primary/20 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
         >
-          <Send className="w-4 h-4" />
-          <span>Send Message</span>
+          {isSending ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              <span>Sending...</span>
+            </>
+          ) : (
+            <>
+              <Send className="w-4 h-4" />
+              <span>Send Message</span>
+            </>
+          )}
         </button>
       </form>
     </div>
   );
 };
+
