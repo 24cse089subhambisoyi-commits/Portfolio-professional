@@ -24,21 +24,25 @@ export const ContactForm: React.FC = () => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
+    const makeWebhookUrl = import.meta.env.VITE_MAKE_WEBHOOK_URL;
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    if (
-      !serviceId ||
-      serviceId === 'your_service_id' ||
-      !templateId ||
-      templateId === 'your_template_id' ||
-      !publicKey ||
-      publicKey === 'your_public_key'
-    ) {
+    const hasWebhook = Boolean(makeWebhookUrl && makeWebhookUrl.startsWith('http'));
+    const hasEmailJS = Boolean(
+      serviceId &&
+      serviceId !== 'your_service_id' &&
+      templateId &&
+      templateId !== 'your_template_id' &&
+      publicKey &&
+      publicKey !== 'your_public_key'
+    );
+
+    if (!hasWebhook && !hasEmailJS) {
       setStatus({
         type: 'warning',
-        message: 'EmailJS API keys are not configured yet in .env file or Vercel Environment Variables.',
+        message: 'No active form endpoint configured. Please check VITE_MAKE_WEBHOOK_URL or EmailJS keys in .env.',
       });
       return;
     }
@@ -47,19 +51,41 @@ export const ContactForm: React.FC = () => {
     setStatus(null);
 
     try {
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          reply_to: formData.email,
-          subject: formData.subject || 'Portfolio Inquiry',
-          message: formData.message,
-          to_name: userProfileData.name || 'Subham Bisoyi',
-        },
-        publicKey
-      );
+      if (hasWebhook) {
+        // Send directly to Make.com Webhook
+        const res = await fetch(makeWebhookUrl!, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject || 'Portfolio Inquiry',
+            message: formData.message,
+            submittedAt: new Date().toISOString(),
+          }),
+        });
+
+        if (!res.ok) {
+          throw new Error(`Webhook returned status ${res.status}`);
+        }
+      } else {
+        // EmailJS submission fallback
+        await emailjs.send(
+          serviceId!,
+          templateId!,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            reply_to: formData.email,
+            subject: formData.subject || 'Portfolio Inquiry',
+            message: formData.message,
+            to_name: userProfileData.name || 'Subham Bisoyi',
+          },
+          publicKey!
+        );
+      }
 
       setStatus({
         type: 'success',
@@ -67,10 +93,10 @@ export const ContactForm: React.FC = () => {
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (err: any) {
-      console.error('EmailJS submit error:', err);
+      console.error('Contact form submission error:', err);
       setStatus({
         type: 'error',
-        message: err?.text || err?.message || 'Failed to send message. Please try sending directly via email link above.',
+        message: err?.message || 'Failed to send message. Please try sending directly via email link above.',
       });
     } finally {
       setIsSending(false);
